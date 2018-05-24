@@ -6,9 +6,9 @@ veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 def key_for_min_value(name_hash)
   new_hash = {}
-  name_hash.collect do |item, num|
-  new_hash << name_hash.sort(num)
+  name_hash.collect do |k,v|
+  new_hash << name_hash.sort(v)
   end 
 new_hash
-new_hash[0][item]
+new_hash[0][v]
 end
